@@ -1,19 +1,13 @@
 import { ActionTypes } from "../contants/action-types"
 
 const initialState = {
-    launches: [
-        {
-        id: 1,
-        title: "Dipesh",
-        category: "programmer",
-    },
-],
+    launches: [],
 };
 
 export const launchesReduce = (state = initialState, {type, payload}) => {
     switch (type) {
         case ActionTypes.SET_LAUNCHES:
-            return state;
+            return {...state, launches: payload};
         default:
             return state;
     }

@@ -1,4 +1,4 @@
-import { ActionTypes } from "../contants/action-types"
+import { ActionTypes } from "../contants/action-types";
 export const setLaunches = (launches) => {
     return {
         type:ActionTypes.SET_LAUNCHES,
@@ -6,7 +6,7 @@ export const setLaunches = (launches) => {
     };
 };
 
-export const setLaunches = (launches) => {
+export const selectedLaunches = (launches) => {
     return {
         type: ActionTypes.SELECTED_LAUNCHES,
         payload: launches,

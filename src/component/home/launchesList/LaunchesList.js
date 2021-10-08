@@ -22,7 +22,7 @@ function LaunchesList () {
         },[])
 
 
-        console.log(launches)
+        console.log("launches: ", launches)
     return (
         <div>
             <h1>Liotn</h1>
