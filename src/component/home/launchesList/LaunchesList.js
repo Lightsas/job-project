@@ -3,6 +3,7 @@ import axios from "axios";
 import {useDispatch, useSelector} from 'react-redux';
 import { setLaunches } from '../../redux/action/missionAction';
 import Launches from '../launches/Launches';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function LaunchesList () {
     const launches = useSelector((state) => state);
@@ -25,8 +26,13 @@ function LaunchesList () {
         console.log("launches: ", launches)
     return (
         <div>
-            <h1>Liotn</h1>
-            <Launches></Launches>
+            <Container fluid>
+                <Row>
+
+                    <Launches></Launches>
+
+                </Row>
+            </Container>
         </div>
     );
 };
