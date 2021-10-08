@@ -7,7 +7,7 @@ import LaunchesList from './launchesList/LaunchesList';
 function Home() {
     return (
         <div>
-            <LaunchesList></LaunchesList>
+
         </div>
     );
 }
