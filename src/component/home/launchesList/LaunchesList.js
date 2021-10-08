@@ -1,10 +1,12 @@
 import React, {useEffect} from 'react';
 import axios from "axios";
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
+import { setLaunches } from '../../redux/action/missionAction';
 import Launches from '../launches/Launches';
 
 function LaunchesList () {
     const launches = useSelector((state) => state);
+    const dispatch = useDispatch();
 
         const fetchLaunches = async () => {
             const response = await axios
@@ -12,7 +14,7 @@ function LaunchesList () {
             .catch((err) => {
                 console.log("Err", err);
             });
-            console.log(response.data)
+            dispatch(setLaunches(response.data))
         };
 
         useEffect(() => {
