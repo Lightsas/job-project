@@ -23,7 +23,7 @@ function LaunchesList () {
         },[])
 
 
-        console.log("launches: ", launches)
+        // console.log("launches: ", launches)
     return (
         <div>
             <Container fluid>

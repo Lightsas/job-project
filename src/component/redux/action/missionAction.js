@@ -12,3 +12,9 @@ export const selectedLaunches = (launches) => {
         payload: launches,
     };
 };
+
+export const removeselectedLaunches = (launches) => {
+    return {
+        type: ActionTypes.REMOVE_SELECTED_LAUNCHES,
+    };
+};

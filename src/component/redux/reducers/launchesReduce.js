@@ -12,3 +12,14 @@ export const launchesReduce = (state = initialState, {type, payload}) => {
             return state;
     }
 }
+
+export const selectedLaunchesReduce = (state = {}, {type, payload}) => {
+    switch (type) {
+        case ActionTypes.SELECTED_LAUNCHES:
+            return {...state, ...payload };
+        case ActionTypes.REMOVE_SELECTED_LAUNCHES:
+            return {};    
+        default:
+            return state;    
+    }
+};

@@ -8,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import LaunchesDetails from './component/home/launchesDetails/LaunchesDetails';
 
 function App() {
   return (
@@ -16,8 +17,11 @@ function App() {
             {/* <Route>
                 <Home></Home>
             </Route> */}
-            <Route>
+            <Route exact path="/">
               <LaunchesList></LaunchesList>
+            </Route>
+            <Route path={"/launches/:launchesId"}>
+              <LaunchesDetails></LaunchesDetails>
             </Route>
           </Switch>
       </Router>
