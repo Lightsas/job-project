@@ -1,13 +1,9 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import LaunchesList from './launchesList/LaunchesList';
-
-
 
 function Home() {
     return (
         <div>
-
+            <h1>This is Home Componet</h1>
         </div>
     );
 }
